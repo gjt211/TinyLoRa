@@ -19,5 +19,7 @@ Guide.
 
 This library was written by [ClemensRiederer](https://github.com/ClemensRiederer/TinyLoRa-BME280). We've modified it to support channel/datarate selections and made small changes so it works with the Adafruit Feather 32u4 LoRa and the Adafruit Feather M0 LoRa. We've added examples for using this library to transmit sensor data over a single channel or multiple channels to The Things Network.
 
+This fork of the library has been modofied to add `TinyLoRa::end()` function.
+
 This open source code is licensed under the LGPL license (see [LICENSE](LICENSE)
 for details).
