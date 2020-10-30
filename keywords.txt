@@ -10,4 +10,5 @@ TinyLoRa	KEYWORD1
 ###################################################################
 frameCounter	KEYWORD2
 begin	KEYWORD2
+end KEYWORD2
 sendData	KEYWORD2
