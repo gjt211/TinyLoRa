@@ -72,7 +72,7 @@ typedef enum rfm_datarates {
 
 /** Region configuration*/
 #if !defined(EU863) && !defined(AU915) && !defined(AS920)
-#define US902 ///< Used in USA, Canada and South America
+#define AU915 ///< Used in Australia
 #endif
 //#define EU863 ///< Used in Europe
 //#define AU915 ///< Used in Australia
@@ -113,6 +113,7 @@ public:
   void setPower(int8_t Tx_Power = 17);
   TinyLoRa(int8_t rfm_dio0, int8_t rfm_nss, int8_t rfm_rst);
   bool begin(void);
+  bool end(void);
   void sendData(unsigned char *Data, unsigned char Data_Length,
                 unsigned int Frame_Counter_Tx, uint8_t Frame_Port = 1);
 
