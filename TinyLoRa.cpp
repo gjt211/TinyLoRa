@@ -411,6 +411,25 @@ bool TinyLoRa::begin() {
 
 /**************************************************************************/
 /*!
+    @brief  stops the SPI and puts used pins to input
+    @return True if the RFM has been initialized
+*/
+/**************************************************************************/
+bool TinyLoRa::end() {
+
+  // stop SPI
+  SPI.end();
+  pinMode(_cs, INPUT);
+  pinMode(_irq, INPUT);
+  if (_rst > 0) {
+	  pinMode(_rst, INPUT);
+  }
+  
+  return 1;
+}
+
+/**************************************************************************/
+/*!
     @brief Sets the TX power
     @param Tx_Power How much TX power in dBm
 */
